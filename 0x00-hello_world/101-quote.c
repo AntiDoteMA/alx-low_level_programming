@@ -2,8 +2,8 @@
 /**
  * main - Entry point
  *
- * This program uses the write() function from the <unistd.h> 
- * header to print the desired message to the standard 
+ * This program uses the write() function from the <unistd.h>
+ * header to print the desired message to the standard
  * error output, and return an error 1.
 */
 int main(void)
