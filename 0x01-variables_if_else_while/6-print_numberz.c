@@ -3,8 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: prints the lowercase alphabet except q and e using
- * only two putchar calls.
+ * Description: pprints all single digit numbers of base 10 
+ * starting from 0
  *
  * Return: Always 0 (Success)
 */
