@@ -12,10 +12,13 @@ int main(void)
 {
 	char n;
 
-	for (n = 30; n <= 39; ++n)
+
+	for (c = 'a'; c <= 'z'; ++c)
 	{
-		putchar(n);
-	}
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
 
 	putchar('\n');
 
