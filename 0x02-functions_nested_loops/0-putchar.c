@@ -17,7 +17,7 @@ int main(void)
 	int strl = strlen(var);
 	int i;
 
-	for (i = 0; i <= strl; i++)
+	for (i = 0; i < strl; i++)
 	{
 		_putchar(var[i]);
 
