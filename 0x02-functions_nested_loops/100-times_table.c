@@ -1,21 +1,21 @@
 #include"main.h"
 
 /**
- * print_times_table - function that prints the n times table
+ * print_times_table - prints time table of input
  *
- * @n: takes number input
+ * @input: takes number input
 */
 
-void print_times_table(int n)
+void print_times_table(int input)
 {
 	int i, n, j;
 
-	if (n <= 15 && n >= 0)
+	if (input <= 15 && input >= 0)
 	{
-		for (n = 0; n <= n; ++n)
+		for (n = 0; n <= input; ++n)
 		{
 			_putchar(48);
-			for (j = 1; j <= n; ++j)
+			for (j = 1; j <= input; ++j)
 			{
 				_putchar(',');
 				_putchar(' ');
