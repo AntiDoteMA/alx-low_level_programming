@@ -13,23 +13,23 @@
 
 int main(void)
 {
-	unsigned long fib1 = 0, fib2 = 1, sum;
-	float total_sum;
+	unsigned long f1 = 0, f2 = 1, sm;
+	float tsm;
 
 	while (1)
 	{
-		sum = fib1 + fib2;
+		sm = f1 + f2;
 
-		if (sum > 4000000)
+		if (sm > 4000000)
 			break;
 
-		if ((sum % 2) == 0)
-			total_sum += sum;
+		if ((sm % 2) == 0)
+			tsm += sm;
 
-		fib1 = fib2;
-		fib2 = sum;
+		f1 = f2;
+		f2 = sm;
 	}
-	printf("%.0f\n", total_sum);
+	printf("%.0f\n", tsm);
 
 	return (0);
 }
