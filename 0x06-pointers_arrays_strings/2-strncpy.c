@@ -8,23 +8,22 @@
  * Return: @dest
 */
 
-char *_strncpy(char *dest, const char *src, size_t n)
+char* _strncpy(char* dest, char* src, int n)
 {
-	size_t i;
-
-	i = 0
-
+	int i;
+	
 	/* Copy up to n bytes from src to dest */
-	while (i < n && src[i] != '\0') {
+	for (i = 0; i < n && src[i] != '\0'; i++)
+	{
 		dest[i] = src[i];
-		i++;
 	}
-	/* If src is shorter than n, pad dest with null bytes */
-	while (i < n) {
+	/* If src has fewer than n bytes
+		pad dest with null bytes */
+	while (i < n)
+	{
 		dest[i] = '\0';
 		i++;
 	}
-
 	return dest;
 }
 
