@@ -12,6 +12,8 @@
  * Return: Always 0 (Success)
 */
 
+typedef enum { FALSE, TRUE } bool;
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int index;
